@@ -7,7 +7,7 @@ export default function Screen1() {
   return (
     <ThemedView style={styles.container}>
       <ThemedText type="title">Screen 1</ThemedText>
-      <Link href="/screen">
+      <Link href="/screen" asChild>
         <Button title="Login" />
       </Link>
     </ThemedView>
