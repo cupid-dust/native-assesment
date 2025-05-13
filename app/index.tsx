@@ -1,12 +1,15 @@
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import { Link } from "expo-router";
 import { Button, StyleSheet } from "react-native";
 
 export default function Screen1() {
   return (
     <ThemedView style={styles.container}>
       <ThemedText type="title">Screen 1</ThemedText>
-      <Button title="Login" />
+      <Link href="/screen">
+        <Button title="Login" />
+      </Link>
     </ThemedView>
   );
 }
